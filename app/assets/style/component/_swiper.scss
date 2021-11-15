@@ -1,0 +1,16 @@
+.siteSwiper .swiper-slide img{
+    height: 200px;
+    // @include media-breakpoint-down(md) {
+    //     height: 50px;
+    // }
+}
+
+.swiper-pagination-bullet{
+    border: solid 1.5px $tertiary;
+    background-color: $white;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: $tertiary;
+
+}
