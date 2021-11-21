@@ -67,19 +67,20 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:        #ffc437; // $blue !default;
-$secondary:     #222222;//$gray-600 !default;
-$tertiary:       #444444;//new
-$success:       #018469; //$green !default;
+$primary:        #068481; // $blue !default;
+$secondary:     #8EEAC9;//$gray-600 !default;
+$tertiary:       #1DD592;//new
+$success:       #4ADDA8; //$green !default;
 $light-gray:     #666666;//new
 $footer-black:   #041D30;//new
 $info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
+$warning:       #D5B91D;//$yellow !default;
+$danger:        #D32424;//$red !default;
+$pink:         #FFADAD;
 $light:         #e2ebf1; // $gray-100 !default;
 
 $gray:           #e2ebf1; //new
-$dark:           #041d30;//$gray-900 !default;
+$dark:           #245456;//$gray-900 !default;
 $black:          #000;//new
 
 $white:          #fff;//new
@@ -91,7 +92,7 @@ $theme-colors: (
   "secondary":  $secondary,
   "success":    $success,
   "tertiary":   $tertiary,//new
-  "light-gray": $light-gray, //new
+  "pink": $pink, //new
   "footer-black": $footer-black, //new
   "info":       $info,
   "warning":    $warning,
@@ -503,7 +504,7 @@ $h1-font-size:                $font-size-base * 3;//$font-size-base * 2.5 !defau
 $h2-font-size:                $font-size-base * 2;//$font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.5;//$font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1;//$font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 0 ;//$font-size-base * 1.25 !default;
+$h5-font-size:                $font-size-base * 0.75 ;//$font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base * 0 ;//$font-size-base !default;
 $sm-font-size:                $font-size-base * 0 ;//$font-size-base * 1.25 !default;
 // scss-docs-end font-variables

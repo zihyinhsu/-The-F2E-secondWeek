@@ -1,58 +1,61 @@
 ---
-title: Boostrap Index
+title: 挖欸卡搭掐
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
 
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
+<!-- 地圖 -->
+<div class="googleMap box-shadow ms-n10 index-9999 single-rounded-map position-relative">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.708270136562!2d121.50719341412508!3d25.043972544047506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a90ba244f77f%3A0xde852bb3dbefd634!2z5Y-w5YyX5biC6K2m5a-f5bGA5pyN5YuZ5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1637481661085!5m2!1szh-TW!2stw"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+<!-- nav -->
+<nav class="navbar bg-dark position-absolute top-0 w-100">
+  <div class="container">
+    <a class="me-5" href="#">
+      <i class="fas fa-crosshairs fa-2x text-white px-3 pe-5 border-end"></i>
+    </a>
+    
+   <div class="d-flex align-items-center me-auto">
+    <div class="btn-group overflow-hidden me-5">
+      <a href="#" class="btn btn-warning border-0 active" aria-current="page">借車</a>
+      <a href="#" class="btn btn-outline-warning text-white">還車</a>
     </div>
+  
+     <!-- 全台站點 -->
+     <div class="d-flex align-items-center w-27 me-5">
+      <label class="text-white w-100">全台站點</label>
+      <input class="form-control placeHolderColor border-white text-white bg-dark" type="text" placeHolder="松竹">
+    </div>
+  
+    <!-- 顯示半徑 -->
+    <div class="d-flex align-items-center">
+      <label class="w-100 text-white pe-2">顯示半徑</label>
+      <select class="form-select placeHolderColor border-white text-white bg-dark" aria-label="Default select example" style="background-image: url('./assets/images/arrow.svg');">
+        <!-- <option selected>1000m</option> -->
+        <option value="1">500m</option>
+        <option value="2">1000m</option>
+        <option value="3">2000m</option>
+      </select>
+    </div>
+   </div>
+
+  <!-- 顯示自行車路線 -->
+  <div class="form-check ps-10 border-start py-2">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label text-white" for="exampleCheck1">顯示自行車路線</label>
   </div>
+
+  </div>
+</nav>
+
+<!-- 站點列表 -->
+<div class="siteList bg-black position-absolute bottom-0 h-20 opacity-0.7 w-100">
+  <a class="d-flex align-items-center center" href="#">
+    <i class="fas fa-bars fa-2x text-white me-5"></i>
+    <p class="text-white h3">站點列表</p>
+  </a>  
+  <p class="position-absolute top-50 end-0 translate-middle-y text-white me-5 ">更新時間 : 2021/11/10 22:43</p>
 </div>
+</div>
+

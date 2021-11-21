@@ -19,6 +19,7 @@ $utilities: map-merge(
       property: height,
       class: h,
       values: (
+        20: 20%,
         25: 25%,
         30: 30%,
         35: 35%,
@@ -38,7 +39,10 @@ $utilities: map-merge(
       property: width,
       class: w,
       values: (
+        20: 20%,
+        22/.5: 22.5%,
         25: 25%,
+        27: 27%,
         30: 30%,
         35: 35%,
         40: 40%,
@@ -86,6 +90,15 @@ $utilities: map-merge(
         pill: $border-radius-pill
       )
     ),
+    "opacity": (//new
+      property: opacity,
+      class: opacity,
+      values: (
+        0: 0,
+        0\.7: 0.7,
+        1: 1,
+      )
+    ),
     "single-rounded": (
       responsive: true,//new
       property: border-radius,
@@ -99,6 +112,7 @@ $utilities: map-merge(
         6: 8px 0px 8px 0px,
         7: 0px 12px 0px 12px,
         8: 12px 0px 12px 0px,
+        map: 0px 0px 0px 60px,
       )
     ),
     "z-index": (
